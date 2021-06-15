@@ -1,4 +1,4 @@
-USE sql_store;		-- OPTIONAL
+USE sql_store;		-- present database
 
 SELECT *
 FROM order_items oi		-- table of the current database

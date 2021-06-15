@@ -13,6 +13,7 @@ FROM invoices
 WHERE invoice_date BETWEEN '2019-01-01' AND '2019-12-31' ;
 
 -- -------------------------------------------------------------------------------------------------------
+USE sql_invoicing;
 SELECT 
 	MAX(invoice_date) AS max_date, 	-- will give the max date
     MIN(invoice_date) AS min_date,	-- min date
