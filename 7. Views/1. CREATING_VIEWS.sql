@@ -7,4 +7,7 @@ JOIN invoices i
 	USING (client_id)
 GROUP BY client_id, name
 ORDER BY client_id
--- NOTE: VIEWS DON'T STORE DATA AS LIKE TABLE, ITS PROVIDE VIEW OF THE TABLE.
+-- NOTE: VIEWS DON'T STORE DATA AS LIKE TABLE, IT JUST PROVIDE VIEW OF THE TABLE.
+-- In Views folder in mysql workbench view will get created b running this query.
+-- view is used to avoid complex queries.
+-- we can also join view with table and show result as output just like normal table queries but the data in view in not stored unlike in tables.

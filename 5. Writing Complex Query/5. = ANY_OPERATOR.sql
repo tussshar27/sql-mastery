@@ -1,4 +1,4 @@
--- select clients with atleast 2 invoices.
+-- Q) select clients with atleast 2 invoices.
 -- using = ANY operator
 USE sql_invoicing;
 SELECT *
@@ -10,7 +10,7 @@ WHERE client_id = ANY (
     HAVING COUNT(*) >= 2
 );
 -- use of COUNT function
-SELECT COUNT(client_id), COUNT(*)
+SELECT client_id, COUNT(client_id), COUNT(*)
     FROM invoices
     GROUP BY client_id;
     
@@ -23,3 +23,4 @@ WHERE client_id IN (
     GROUP BY client_id
     HAVING COUNT(*) >= 2
 )
+-- Note: IN operator is equivalent to = ANY operator.

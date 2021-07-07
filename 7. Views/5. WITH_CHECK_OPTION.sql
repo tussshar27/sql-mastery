@@ -19,3 +19,9 @@ WITH CHECK OPTION;				-- THIS IS USED TO AVOID REMOVAL OF ROW FROM VIEW BY SQL I
 UPDATE invoices_with_balance
 SET payment_total = invoice_total
 WHERE invoice_id = 3
+
+-- ----------------------------------------------------------
+-- the advantages of views are:
+-- 1. simplify queries
+-- 2. reduce the impact of changes
+-- 3. restrict access to the data

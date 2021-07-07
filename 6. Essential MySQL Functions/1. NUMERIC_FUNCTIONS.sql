@@ -7,6 +7,6 @@ SELECT CEILING(7.53251);		-- 8
 SELECT CEILING(7.21);			-- 8
 SELECT FLOOR(7.851);			-- 7
 SELECT FLOOR(7.31);				-- 7
-SELECT ABS(7.851);	-- Absolute value
+SELECT ABS(7.851);	-- same value Absolute value
 SELECT ABS(-7.851);	-- Absolute value
 SELECT RAND();	-- Its used to generate random float number between 0 and 1 every time we run this query.

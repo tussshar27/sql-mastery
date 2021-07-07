@@ -7,3 +7,5 @@ WHERE invoice_total - payment_total > 0;
 END $$
 
 DELIMITER ;
+
+CALL get_invoices_with_balance();

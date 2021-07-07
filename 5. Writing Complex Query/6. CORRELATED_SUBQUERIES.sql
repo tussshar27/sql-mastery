@@ -5,4 +5,6 @@ WHERE invoice_total > (
 	SELECT AVG(invoice_total)		-- this subquery will run first like a loop to find the AVG salary and then outer query will compare from it.
     FROM invoices
     WHERE client_id = i.client_id	-- we only want invoices for current client.
+    -- this inner subquery will run for each outer query
 );
+-- correlated subqueries are very slow.

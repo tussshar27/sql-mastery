@@ -1,9 +1,9 @@
 DROP PROCEDURE IF EXISTS get_unpaid_invoices_for_clients
 DELIMITER $$
 CREATE PROCEDURE get_unpaid_invoices_for_clients(
-		client_id INT, 
-		OUT invoices_count INT, 
-		OUT invoices_total DECIMAL(9,2)
+		client_id INT, -- only this parameter we have to enter not below parameters
+		OUT invoices_count INT, -- its output parameter
+		OUT invoices_total DECIMAL(9,2) -- its output parameter
     )
 BEGIN
 	SELECT COUNT(*), SUM(invoice_total)

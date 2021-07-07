@@ -1,4 +1,5 @@
--- Q- find customers who brought lettuce(id = 3)
+-- Q) find customers who brought lettuce(product_id = 3)
+-- There are two ways from which we can solve complex sql problems i.e by join or by subquery.
 USE sql_store;
 -- using SUBQUERY
 SELECT 
@@ -13,7 +14,7 @@ WHERE customer_id IN
 	JOIN orders o USING (customer_id)
 	JOIN order_items oi USING (order_id)
 	WHERE oi.product_id = 3
-    )
+)
 ORDER BY customer_id;
 
 -- using JOIN

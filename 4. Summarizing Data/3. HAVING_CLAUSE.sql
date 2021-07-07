@@ -14,4 +14,4 @@ GROUP BY 	-- Note: if we use aggregate function in SELECT statement then in GROU
 	c.first_name,	-- Now the group is created by first_name, last_name, State showing unique values in combination.
     c.last_name,
 	c.state
-HAVING spent_price>=100;
+HAVING spent_price>=100;	-- HAVING clause is used after GROUP BY clause.

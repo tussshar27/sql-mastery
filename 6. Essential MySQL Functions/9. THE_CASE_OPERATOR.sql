@@ -1,3 +1,4 @@
+USE sql_store;
 SELECT
 	order_id,
     CASE							-- CASE operator is used for multi expression
