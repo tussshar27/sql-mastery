@@ -2,7 +2,7 @@ USE sql_store;
 SELECT *
 FROM customers
 WHERE birth_date BETWEEN '1990-01-01' AND '2000-01-01'	-- note: date is always consider as String
--- WHERE birth_date TO_DATE('2020-JAN-15', 'YYYY-MON-DD');  -- TO_DATE function is used to convert String to date with specified date format.
+-- WHERE birth_date >= TO_DATE('2020-JAN-15', 'YYYY-MON-DD');  -- TO_DATE function is used to convert String to date with specified date format.
 -- SELECT to_date('20200526','YYYYMMDD');
 -- SELECT TO_DATE('2020-05-26 13:27:18', 'YYYY-MM-DD HH24:MI:SS');
 
