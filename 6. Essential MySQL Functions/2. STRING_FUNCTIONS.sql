@@ -12,6 +12,7 @@ SELECT SUBSTR(column_name, 1, 5) FROM table_name; --substring all the row values
 SELECT LOCATE('N','Kindergarten');	-- 3 -- GIVES THE POSITION OF CHARACTER TO SEARCH	-- not casesensitive
 SELECT LOCATE('q','Kindergarten');	-- 0
 SELECT LOCATE('inder','Kindergarten');	-- 2	-- gives first character occurance
+LOCATE() is same as INSTR() function.
 SELECT REPLACE('Kindergarten','garten','garden');	-- replace the given string
 SELECT CONCAT('ABC', 'PQR');
 SELECT CONCAT(fname, lname) FROM employees;
