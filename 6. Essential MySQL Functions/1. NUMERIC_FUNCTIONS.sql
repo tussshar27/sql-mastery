@@ -1,8 +1,9 @@
 -- to run query select any one and run.
 -- There are more mysql numeric functions but these are the most used and common functions.
 SELECT ROUND(7.53251,1);		-- 7.5
-SELECT ROUND(7.53251,2);		-- 7.53
-SELECT TRUNCATE(7.532551,5);	-- 7.53255 		-- truncate and round are same.
+SELECT ROUND(7.53251,2);		-- 7.54
+SELECT ROUND(999.9788,1);		-- 1000
+SELECT TRUNCATE(7.532551,5);	-- 7.53255 		-- truncate and round are not the same.
 SELECT CEILING(7.53251);		-- 8
 SELECT CEILING(7.21);			-- 8
 SELECT FLOOR(7.851);			-- 7
