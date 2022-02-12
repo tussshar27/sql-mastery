@@ -14,6 +14,7 @@ SELECT LOCATE('q','Kindergarten');	-- 0
 SELECT LOCATE('inder','Kindergarten');	-- 2	-- gives first character occurance
 SELECT REPLACE('Kindergarten','garten','garden');	-- replace the given string
 SELECT CONCAT('ABC', 'PQR');
+SELECT CONCAT(fname, lname) FROM employees;
 
 USE sql_store;
 SELECT CONCAT(first_name, ' ', last_name) AS full_name
