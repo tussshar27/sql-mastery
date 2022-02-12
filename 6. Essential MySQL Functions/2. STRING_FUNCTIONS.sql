@@ -19,6 +19,11 @@ SELECT CONCAT(fname, lname) FROM employees;
 SELECT RPAD(fname, 10, '*'), LPAD(fname, 10, '*') FROM employees;
 -- rpad and lpad insert padding to the vacant spaces in the value.
 
+SELECT TO_CHAR(salary_col,'L99G999'), salary_col FROM employees;
+-- eg. $20,000  20000
+-- TO_CHAR() is only supported in oracle
+-- TO_CHAR() is used to convert numeric values to string.
+-- FORMAT() is used in MySQL
 USE sql_store;
 SELECT CONCAT(first_name, ' ', last_name) AS full_name
 FROM customers;
