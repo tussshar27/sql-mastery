@@ -16,6 +16,8 @@ LOCATE() is same as INSTR() function.
 SELECT REPLACE('Kindergarten','garten','garden');	-- replace the given string
 SELECT CONCAT('ABC', 'PQR');
 SELECT CONCAT(fname, lname) FROM employees;
+SELECT RPAD(fname, 10, '*'), LPAD(fname, 10, '*') FROM employees;
+-- rpad and lpad insert padding to the vacant spaces in the value.
 
 USE sql_store;
 SELECT CONCAT(first_name, ' ', last_name) AS full_name
