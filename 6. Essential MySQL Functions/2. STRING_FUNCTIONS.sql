@@ -8,6 +8,7 @@ SELECT LEFT('Kindergarten', 4);	-- Kind
 SELECT RIGHT('Kindergarten', 5);	-- garten
 SELECT SUBSTRING('Kindergarten', 3, 5);	-- nderg	-- 5 is optional which shows length
 SELECT SUBSTRING('Kindergarten', 3);	-- ndergarten
+SELECT SUBSTR(column_name, 1, 5) FROM table_name; --substring all the row values till 5th char.
 SELECT LOCATE('N','Kindergarten');	-- 3 -- GIVES THE POSITION OF CHARACTER TO SEARCH	-- not casesensitive
 SELECT LOCATE('q','Kindergarten');	-- 0
 SELECT LOCATE('inder','Kindergarten');	-- 2	-- gives first character occurance
