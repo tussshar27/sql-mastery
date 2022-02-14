@@ -15,3 +15,4 @@ GROUP BY 	-- Note: if we use aggregate function in SELECT statement then in GROU
     c.last_name,
 	c.state
 HAVING spent_price>=100;	-- HAVING clause is used after GROUP BY clause.
+-- NOTE: WHERE clause is used for single record, whereas HAVING clause is used for grouped data.
